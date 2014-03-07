@@ -1,0 +1,33 @@
+name: GameOfLife
+main: net.teslaraptor.GameOfLife
+version: 1337
+commands:
+    lifestart:
+        description: Starts Conway's Game of Life
+        usage: /lifestart
+        permission: gameoflife.main
+        permission-usage: You cannot start Game of Life
+    lifestop:
+        description: Stops Conway's Game of Life
+        usage: /lifestop
+        permission: gameoflife.main
+        permission-usage: You cannot stop Game of Life
+    lifeload:
+        description: Load block data
+        usage: /lifeload
+        permission: gameoflife.main
+        permission-usage: You cannot load block data
+    liferun:
+        description: Increment Game of Life
+        usage: /liferun
+        permission: gameoflife.main
+        permission-usage: You cannot increment the Game of Life
+    lifeclear:
+        description: Clear the board
+        usage: /lifeclear
+        permission: gameoflife.main
+        permission-usage: You cannot clear the Game of Life board
+permissions:
+    gameoflife.main:
+        default: op
+        description: Game Of Life permission
